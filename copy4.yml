@@ -1,0 +1,5 @@
+- name: Copy a "sudoers" file on the remote machine for editing
+  ansible.builtin.copy:
+    src: /tmp/text.txt
+    dest: /tmp/text.dest.txt
+    remote_src: yes
